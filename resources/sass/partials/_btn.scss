@@ -1,0 +1,69 @@
+.btn-container{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    
+}
+.button{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 10px 40px 0 0;
+    a{
+        outline: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255,255,255,0.1);
+        border: 2px solid $second-col;
+        border-radius: 30px;
+        color: $second-col;
+        z-index: 1;
+        text-decoration: none;
+        transition: 0.4s;
+        backdrop-filter: blur(15px);
+        
+    }
+}
+//hover
+.button:hover a{
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+#search-restaurant.button:hover a,
+#research-button.button:hover a{
+    letter-spacing: 0;
+}
+#learn-more.button a{
+    color: $prime-col;
+    background-color: $second-col;
+}
+.button:hover a::before{
+    text-decoration: none;
+    transform: skewX(0deg) translateX(80%);
+    z-index: 0;
+}
+.button:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay:0.5s ;
+}
+//pseudclass
+.button a::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.5),transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}

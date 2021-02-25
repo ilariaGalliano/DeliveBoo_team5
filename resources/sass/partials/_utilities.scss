@@ -1,0 +1,63 @@
+//HOMEPAGE
+.bg-active{  
+    background-color: white;
+}
+.img-container{
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 300px;
+    img{
+        width: 100%;
+    }
+}
+.typing{
+    position: relative;
+    color: $second-col; 
+    margin-left: 10px;
+}
+.typing::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 90%;
+    background-color: $second-col;
+    border: 2px solid $second-col;
+    animation: blink 0.5s infinite ease;
+}
+.links-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    #up, #down{
+        display: flex;  
+        margin: 20px;
+        width: 80%;
+        .images{
+            width: 500px;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: $prime-col;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            img{
+                margin: 20px;
+                width: 70%;
+            }
+        }
+        
+    }
+    #down{
+        .images:nth-child(1){
+            width: 700px;
+
+        }
+        .images:nth-child(2){
+            width: 300px;
+
+        }
+    }
+}

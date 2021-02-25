@@ -1,0 +1,24 @@
+#homepage{
+    background-color: $prime-col;
+    
+    section{
+      position: relative;    
+      min-height: 100vh;
+      max-width: 100%;
+      #type-anim{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        display: flex;
+      } 
+    }
+    section:nth-child(2){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }  
+  
+      
+  
+  

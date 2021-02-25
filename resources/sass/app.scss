@@ -1,0 +1,22 @@
+@import "partials/vars";
+@import "partials/btn";
+@import "partials/animations";
+@import "partials/utilities";
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+@import "partials/header";
+@import "partials/home";
+@import "partials/index";
+@import "partials/show";
+
+
+
+@import "partials/mediaqueries";
+@import "partials/cards";
+@import "partials/switch";

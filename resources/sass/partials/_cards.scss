@@ -1,0 +1,94 @@
+.container-card{
+    position: relative;
+    .card{
+        position: relative;
+        width: 320px;
+        height: 450px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        margin: 20px 10px;
+    }
+}
+//after
+#salsa:after{
+    content: "Salsa&Bachata";
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 30px;
+    font-weight:600;
+    color: $prime-col;
+}
+//before
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $prime-col;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+
+.card{
+    .img-bx{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 100%;
+        height: 220px;
+        transition: 0.5s;
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 200px;
+            height: 250px;
+        }
+    }
+    .content-bx{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        transition: 1s;
+        z-index: 1;
+        display: none;    
+        a{
+            height: 30px;
+            width: 70px;
+            background-color: $prime-col;
+            color: $second-col;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+    }
+}
+//HOVER
+.card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+.card:hover:after{
+    display: none;
+}
+.card:hover .img-bx{
+    top: 5%;
+    transform: translateY(0%);
+}
+.card:hover .content-bx{
+    height: 180px;
+    display: block;
+    transition: 0.5s;
+}

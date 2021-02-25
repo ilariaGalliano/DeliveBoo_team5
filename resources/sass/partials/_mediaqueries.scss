@@ -1,0 +1,35 @@
+@media screen and (max-width: 991px){
+    #lilgirl{
+        display: none;
+    }
+    .navbar-ul{
+        display: none;
+    }
+    #type-anim{
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .btn-container{
+        top: 60%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    #hamburger-menu{
+        display: block;
+    }
+    header{
+        padding: 0;
+    }
+    .sticky{
+        padding: 10px 20px 10px 20px;
+    }
+    #up,#down{
+        flex-direction: column;
+        max-width: 70%;
+        .images{
+            min-width: none;
+            max-width: 300px;
+        }
+    }
+  
+}

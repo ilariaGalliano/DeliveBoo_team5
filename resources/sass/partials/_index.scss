@@ -1,0 +1,30 @@
+
+
+  #index{
+    background-color: white;
+  }
+#restaurants-filtered{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    list-style: none;
+  }
+}
+.research-container{
+  width: 80%;
+  background-color: $prime-col;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 70px;
+  border-radius: 10px;
+  margin: 100px 50px 100px 0;
+}
+.restype-checkbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  li{
+    margin-right: 20px;
+  }
+}
